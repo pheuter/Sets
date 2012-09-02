@@ -1,0 +1,48 @@
+<head>
+  <title>Sets</title>
+  <script src="https://api.filepicker.io/v0/filepicker.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id="side-view" class="span2">
+        {{> side}}
+      </div>
+      <div id="main-view" class="span10">
+        {{> main}}
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="main">
+  {{#if set}}
+    <div class="row">
+      <h1 class="span4">{{set}}</h1>
+      <button id="upload" class="btn btn-primary btn-large span3">Upload images</button>
+    </div>
+    
+    <ul class="thumbnails">
+      {{#each photos}}
+        <li class="span3">
+          <div class="thumbnail">
+            <img src="{{url}}" alt="{{name}}" />
+            <h3>{{name}}</h3>
+            <p><a href="{{url}}" class="btn">Download</a></p>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</template>
+
+<template name="side">
+  <h1>Sets</h1>
+  <form id="new-set"><input id="set-name" type="text" placeholder="Set name" /></form>
+  <div id="sets">
+    {{#each sets}}
+      <div class="set">{{name}}</div>
+    {{/each}}
+  </div>
+</template>

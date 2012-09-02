@@ -1,0 +1,71 @@
+@import 'nib'
+
+@font-face {
+  font-family 'Quantico'
+  font-style normal
+  font-weight 400
+  src local('Quantico'), local('Quantico-Regular'), url(http://themes.googleusercontent.com/static/fonts/quantico/v2/RC4TVDxn85RHKNRvpYMc9HYhjbSpvc47ee6xR_80Hnw.woff) format('woff')
+}
+
+.wellie
+  border-radius 5px
+  box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.08)
+  background-color #EEE
+  border 1px solid rgba(0, 0, 0, 0.05)
+
+
+body
+  background-color #F5F5F5
+
+.container-fluid
+  margin-top 50px
+
+#side-view
+  h1
+    text-shadow 0px 0px 10px #555
+    font-size 100px
+    font-family 'Quantico', sans-serif
+    
+  input#set-name
+    width 100%
+    relative top 50px
+    
+    font-size 16px
+    
+  div#sets
+    relative top 50px
+    
+  div.set
+    cursor pointer
+    overflow ellipsis
+    width 100%
+    margin-top 20px
+    padding 10px 4px 10px 4px
+    text-align center
+    font-family 'Quantico', sans-serif
+    font-size 22px
+    color #08C
+  
+    border-radius 5px
+    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.08)
+    background-color #EEE
+    border 1px solid rgba(0, 0, 0, 0.05)
+    
+    &:active
+      background-color rgba(238, 238, 238, 0.2)
+      
+#main-view
+  relative left 10px
+  
+  h1
+    relative left 80px
+    color #666
+    text-shadow 0px 0px 5px #555
+    font-size 60px
+    font-family 'Quantico', sans-serif
+    
+  #upload-area
+    relative top 50px
+    
+  ul.thumbnails
+    relative top 50px
