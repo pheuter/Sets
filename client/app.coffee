@@ -65,5 +65,5 @@ AppRouter = Backbone.Router.extend
   
 Router = new AppRouter
 Meteor.startup ->  
-  filepicker.setKey '<API_KEY>'
+  filepicker.setKey 'ACSqjiD5pQAmoP5oCArRsz'
   Backbone.history.start pushState: true  
